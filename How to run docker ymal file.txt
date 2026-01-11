@@ -1,1 +1,15 @@
 docker compose up -d
+
+
+# Stop containers
+docker compose down
+
+# Restart
+docker-compose restart
+
+# Logs
+docker logs pgadmin
+docker logs postgres_db
+
+# Enter Postgres container
+docker exec -it postgres_db psql -U cloudcode -d cloudcode
